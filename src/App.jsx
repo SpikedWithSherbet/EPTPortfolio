@@ -238,7 +238,7 @@ function ImageGrid({
                 />
                 <img
                     className="ProjectThumb"
-                    src={import.meta.env.BASE_URL + "/assets/PosterThumbThumb.png"}
+                    src={import.meta.env.BASE_URL + "/assets/PosterThumb.png"}
                     alt="Poster project"
                     onClick={() => {
                         setPosterIsActive(true);
@@ -320,7 +320,7 @@ export default function App() {
 
                                 <div id="contactcontain1">
 
-                                    <img src={"import.meta.env.BASE_URL + /assets/email.png"} />
+                                    <img src={import.meta.env.BASE_URL + "/assets/email.png"} />
 
                                     <p>example@example.com</p>
 
@@ -330,7 +330,7 @@ export default function App() {
 
                                     <a href="#"> <img src={import.meta.env.BASE_URL + "/assets/linkedin.png"} /></a>
 
-                                    <a href="#"> <img src={import.meta.env.BASE_URL + "/assets/linkedin.png"} /></a>
+                                    <a href="#"> <img src={import.meta.env.BASE_URL + "/assets/instagram.png"} /></a>
                                 </div>
                             </>
                         )}
