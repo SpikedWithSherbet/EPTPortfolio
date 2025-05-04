@@ -8,7 +8,7 @@ import './App.css'
 
 
 function Earth() {
-    const { scene } = useGLTF('./src/assets/Earth/scene.gltf')
+    const { scene } = useGLTF('/assets/Earth/scene.gltf')
     const groupRef = useRef()
 
     scene.position.set(0, 0, 0)
@@ -20,7 +20,7 @@ function Earth() {
 }
 
 function Board({ onClick }) {
-    const { scene } = useGLTF('./src/assets/billboard/scene.gltf')
+    const { scene } = useGLTF('/assets/billboard/scene.gltf')
     const groupRef = useRef()
 
     scene.position.set(0, 12, 0)
@@ -32,7 +32,7 @@ function Board({ onClick }) {
 }
 
 function Building({ onClick }) {
-    const { scene } = useGLTF('./src/assets/Building/scene.gltf')
+    const { scene } = useGLTF('/assets/Building/scene.gltf')
     const groupRef = useRef()
 
     useEffect(() => {
@@ -49,7 +49,7 @@ function Building({ onClick }) {
 }
 
 function GraduationCap({ onClick }) {
-    const { scene } = useGLTF('./src/assets/gradcap/scene.gltf')
+    const { scene } = useGLTF('/assets/gradcap/scene.gltf')
     const groupRef = useRef()
 
     useEffect(() => {
@@ -110,7 +110,7 @@ function AesopProject({ aesopactiveStatus = false, setIsActive, isActive, setAes
             <div className="singleprojectbody">
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/AesopThumb.png"
+                    src="./assets/AesopThumb.png"
                     alt="Diorama of a flat plane with a fox, a bee, a hare, and a tortoise, along with the words Aesops Fables captioning it." />
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -141,7 +141,7 @@ function LeoProject({ leoactiveStatus = false, setIsActive, isActive, setLeoIsAc
             <div className="singleprojectbody">
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/LeoThumb.png"
+                    src="/assets/LeoThumb.png"
                     alt="Leo project" />
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -166,7 +166,7 @@ function PosterProject({ posterActiveStatus = false, setIsActive, setPosterIsAct
         <div className="singleproject" style={projectStyles}>
             <h1>POSTER</h1>
             <div className="singleprojectbody">
-                <img className="ProjectThumb" src="./src/assets/PosterThumb.png" alt="Poster project" />
+                <img className="ProjectThumb" src="/assets/PosterThumb.png" alt="Poster project" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             </div>
@@ -188,7 +188,7 @@ function TVShowProject({ tvActiveStatus = false, setIsActive, setTVIsActive }) {
         <div className="singleproject" style={projectStyles}>
             <h1>TV SHOW</h1>
             <div className="singleprojectbody">
-                <img className="ProjectThumb" src="./src/assets/TVShowThumb.png" alt="TV show project" />
+                <img className="ProjectThumb" src="/assets/TVShowThumb.png" alt="TV show project" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             </div>
@@ -220,7 +220,7 @@ function ImageGrid({
             <div className="ImageGrid" style={gridStyles}>
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/AesopThumb.png"
+                    src="/assets/AesopThumb.png"
                     alt="Aesop project"
                     onClick={() => {
                         setAesopIsActive(true);
@@ -229,7 +229,7 @@ function ImageGrid({
                 />
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/LeoThumb.png"
+                    src="/assets/LeoThumb.png"
                     alt="Leo project"
                     onClick={() => {
                         setLeoIsActive(true);
@@ -238,7 +238,7 @@ function ImageGrid({
                 />
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/PosterThumb.png"
+                    src="/assets/PosterThumb.png"
                     alt="Poster project"
                     onClick={() => {
                         setPosterIsActive(true);
@@ -247,7 +247,7 @@ function ImageGrid({
                 />
                 <img
                     className="ProjectThumb"
-                    src="./src/assets/TVShowThumb.png"
+                    src="/assets/TVShowThumb.png"
                     alt="TV Show project"
                     onClick={() => {
                         setTVIsActive(true);
@@ -320,7 +320,7 @@ export default function App() {
 
                                 <div id="contactcontain1">
 
-                                    <img src="./src/assets/email.png" />
+                                    <img src="/assets/email.png" />
 
                                     <p>example@example.com</p>
 
@@ -328,9 +328,9 @@ export default function App() {
 
                                 <div id="contactcontain2">
 
-                                    <a href="#"> <img src="./src/assets/linkedin.png" /></a>
+                                    <a href="#"> <img src="/assets/linkedin.png" /></a>
 
-                                    <a href="#"> <img src="./src/assets/instagram.png" /></a>
+                                    <a href="#"> <img src="/assets/instagram.png" /></a>
                                 </div>
                             </>
                         )}
